@@ -11,44 +11,52 @@ class HomePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
-          color: Colors.red,
+          color: Colors.white,
           padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                'Safe To Eat',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 45,
-                  fontWeight: FontWeight.bold,
+            children: [ 
+              Image.asset(
+                'assets/safetoeat.png', // Replace with your image path
+                width: 400, // Adjust the width as needed
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 8.0),
+                padding: const EdgeInsets.all(8.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8.0),
+                  color: const Color.fromARGB(255, 0, 151, 178),
                 ),
-              ),
-              const SizedBox(height: 30),
-              const Padding(
-                padding: EdgeInsets.only(bottom: 8.0),
-                child: Align(
-                  alignment: Alignment(-1, -1),
-                  child: Text(
-                  'About Us',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),)
-              ),
-              const Padding(
-                padding: EdgeInsets.fromLTRB(0, 0, 60, 0),
-                child: Text(
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-                  'Praesent vestibulum justo in convallis consequat. '
-                  'Vestibulum tristique semper lorem, id tincidunt tellus facilisis vitae.',
-                  textAlign: TextAlign.justify,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                  ),
+                child: Column(
+                  children: const [
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(5,5,10,10),
+                      child: Align(
+                        alignment: Alignment(-1, -1),
+                        child: Text(
+                        'About Us',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(5, 5, 10, 10),
+                      child: 
+                      Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+                        'Praesent vestibulum justo in convallis consequat. '
+                        'Vestibulum tristique semper lorem, id tincidunt tellus facilisis vitae.',
+                        textAlign: TextAlign.justify,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               const SizedBox(height: 40),
@@ -66,11 +74,11 @@ class HomePage extends StatelessWidget {
                         },
                         style: ButtonStyle(
                           minimumSize: MaterialStateProperty.all(const Size.fromHeight(48)),
-                          backgroundColor: MaterialStateProperty.all(Colors.white),
+                          backgroundColor: MaterialStateProperty.all(const Color.fromARGB(255, 0, 151, 178)),
                         ),
                         child: const Text(
                           'Restaurants',
-                          style: TextStyle(color: Colors.red, fontSize: 18, fontWeight: FontWeight.bold),
+                          style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
@@ -84,11 +92,11 @@ class HomePage extends StatelessWidget {
                         },
                         style: ButtonStyle(
                           minimumSize: MaterialStateProperty.all(const Size.fromHeight(48)),
-                          backgroundColor: MaterialStateProperty.all(Colors.white),
+                          backgroundColor: MaterialStateProperty.all(const Color.fromARGB(255, 0, 151, 178)),
                         ),
                         child: const Text(
                           'User',
-                          style: TextStyle(color: Colors.red, fontSize: 20,fontWeight: FontWeight.bold),
+                          style: TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
