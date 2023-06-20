@@ -163,7 +163,7 @@ class RestaurantTrackingPageState extends State<NearbyRestaurant> {
                   } else if (snapshot.hasError) {
                     return const Center(
                       child: Text('Error fetching nearby restaurants',
-                      style: TextStyle(color: Colors.white, fontSize: 16),
+                      style: TextStyle(color: Color.fromARGB(255, 0, 151, 178), fontSize: 16),
                       ),
                     );
                   } else {
@@ -171,7 +171,7 @@ class RestaurantTrackingPageState extends State<NearbyRestaurant> {
                     if (nearbyRestaurants!.isEmpty) {
                       return const Center(
                         child: Text('No nearby restaurants',
-                        style: TextStyle(color: Colors.white, fontSize: 16),),
+                        style: TextStyle(color: Color.fromARGB(255, 0, 151, 178), fontSize: 16),),
                       );
                     } else {
                       nearbyRestaurantLocations = nearbyRestaurants.map((restaurant) => restaurant.location).toList();
