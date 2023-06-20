@@ -137,7 +137,7 @@ class RestaurantTrackingPageState extends State<NearbyRestaurant> {
             ),
           ),
           Container(
-            color: const Color.fromARGB(224, 244, 67, 54),
+            color: const Color.fromARGB(255, 0, 151, 178),
             child: Row(
               children: const [
                 Padding(
@@ -176,7 +176,7 @@ class RestaurantTrackingPageState extends State<NearbyRestaurant> {
                     } else {
                       nearbyRestaurantLocations = nearbyRestaurants.map((restaurant) => restaurant.location).toList();
                       return Container(
-                        color: const Color.fromARGB(224, 244, 67, 54),
+                        color: const Color.fromARGB(255, 0, 151, 178),
                         child: ListView.builder(
                           itemCount: nearbyRestaurants.length,
                           itemBuilder: (context, index) {
@@ -203,7 +203,7 @@ class RestaurantTrackingPageState extends State<NearbyRestaurant> {
                                       width: 42,
                                       height: 42,
                                       decoration: const BoxDecoration(
-                                        color: Color.fromARGB(224, 244, 67, 54),
+                                        color: Color.fromARGB(255, 0, 151, 178),
                                         shape: BoxShape.circle,
                                       ),
                                       child: IconButton(
@@ -221,7 +221,7 @@ class RestaurantTrackingPageState extends State<NearbyRestaurant> {
                                       width: 42,
                                       height: 42,
                                       decoration: const BoxDecoration(
-                                        color: Color.fromARGB(224, 244, 67, 54),
+                                        color: Color.fromARGB(255, 0, 151, 178),
                                         shape: BoxShape.circle,
                                       ),
                                       child: IconButton(
@@ -263,7 +263,7 @@ class RestaurantTrackingPageState extends State<NearbyRestaurant> {
                   },
                   style: ButtonStyle(
                     minimumSize: MaterialStateProperty.all(const Size.fromHeight(48)),
-                    backgroundColor: MaterialStateProperty.all(const Color.fromARGB(223, 134, 36, 29),),
+                    backgroundColor: MaterialStateProperty.all(const Color.fromARGB(219, 17, 94, 108),),
                     shape: MaterialStateProperty.all<OutlinedBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(0), // Remove rounded borders
@@ -283,7 +283,7 @@ class RestaurantTrackingPageState extends State<NearbyRestaurant> {
                   },
                   style: ButtonStyle(
                     minimumSize: MaterialStateProperty.all(const Size.fromHeight(48)),
-                    backgroundColor: MaterialStateProperty.all(const Color.fromARGB(224, 244, 67, 54),),
+                    backgroundColor: MaterialStateProperty.all(const Color.fromARGB(255, 0, 151, 178),),
                     shape: MaterialStateProperty.all<OutlinedBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(0), // Remove rounded borders

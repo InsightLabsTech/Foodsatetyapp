@@ -16,9 +16,9 @@ class _ProfileState extends State<Profile> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          backgroundColor: const Color.fromARGB(224, 244, 67, 54), //change here
+          backgroundColor: Colors.white, //change here
           appBar: AppBar(
-            backgroundColor: const Color.fromARGB(224, 244, 67, 54),
+            backgroundColor: const Color.fromARGB(255, 0, 151, 178),
             title: const Text(
               "User",
               style: TextStyle(color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
@@ -46,89 +46,93 @@ class _ProfileState extends State<Profile> {
                         ],
                       ),
                       // const SizedBox(width: 20),
-                      Column(
-                        children: const [
-                         Padding(
-                           padding: EdgeInsets.only(top: 10),
-                           child: Text(
-                              'Nicole Watson',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 22,
-                                fontWeight: FontWeight.bold
-                              ),
-                            ),
-                         ), 
-                        ],
+                      const Padding(
+                        padding: EdgeInsets.only(top: 10),
+                        child: Text(
+                           'Nicole Watson',
+                           style: TextStyle(
+                             color: Color.fromARGB(255, 0, 151, 178),
+                             fontSize: 22,
+                             fontWeight: FontWeight.bold
+                           ),
+                         ),
                       ),
                     ],
                   ),
                 ],
               ),  
-              SizedBox(
-                height: 555,
-                child: ListView(
-                  padding: const EdgeInsets.fromLTRB(30, 20, 30, 10),
-                  children: [
-                    _buildDishTile('Age', '20'),
-                    _buildDishTile('Height(cm)', '170'),
-                    _buildDishTile('Weight(kg)', '85'),
-                    _buildDishTile('Target Height(cm)', '180'),
-                    _buildDishTile('Target Weight(kg)', '70'),
-                    _buildDishTile('Last Calorie Intake(kcal)', '100'),
-                    _buildDishTile('Avg Calorie Intake(kcal)', '90'),
-                    _buildDishTile('Target Calorie Intake(kcal)', '40'),
-                    // Add more data here...
-                  ],
-                ),
-              ),
-              Align(
-                alignment: Alignment.bottomCenter,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Column(
                 children: [
-                  Expanded(
-                child: ElevatedButton(
-                  onPressed: () {
-                    restmap(); // Handle Restaurants button tap
-                  },
-                  style: ButtonStyle(
-                    minimumSize: MaterialStateProperty.all(const Size.fromHeight(48)),
-                    backgroundColor: MaterialStateProperty.all(const Color.fromARGB(224, 244, 67, 54),),
-                    shape: MaterialStateProperty.all<OutlinedBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(0), // Remove rounded borders
-                      ),
+                  SizedBox(
+                    height: 555,
+                    child: ListView(
+                      padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                      children: [
+                        _buildDishTile('Age', '20'),
+                        _buildDishTile('Height(cm)', '170'),
+                        _buildDishTile('Weight(kg)', '85'),
+                        _buildDishTile('Target Height(cm)', '180'),
+                        _buildDishTile('Target Weight(kg)', '70'),
+                        _buildDishTile('Last Calorie Intake(kcal)', '100'),
+                        _buildDishTile('Avg Calorie Intake(kcal)', '90'),
+                        _buildDishTile('Target Calorie Intake(kcal)', '40'),
+                        // Add more data here...
+                      ],
                     ),
                   ),
-                  child: const Icon(
-                    Icons.local_restaurant,
-                    color: Colors.white,
-                  ),
-                ),
-                ),
-                Expanded(
-                child: ElevatedButton(
-                  onPressed: () {
-                    // Handle User button tap
-                  },
-                  style: ButtonStyle(
-                    minimumSize: MaterialStateProperty.all(const Size.fromHeight(48)),
-                    backgroundColor: MaterialStateProperty.all(const Color.fromARGB(223, 134, 36, 29),),
-                    shape: MaterialStateProperty.all<OutlinedBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(0), // Remove rounded borders
-                      ),
-                    ),
-                  ),
-                  child: const Icon(
-                    Icons.person,
-                    color: Colors.white,
-                  ),
-                ),
-                ),
-              ],
+                ],
               ),
+              Column(
+                children: [
+                  Align(
+                    alignment: Alignment.bottomCenter,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Expanded(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        restmap(); // Handle Restaurants button tap
+                      },
+                      style: ButtonStyle(
+                        minimumSize: MaterialStateProperty.all(const Size.fromHeight(48)),
+                        backgroundColor: MaterialStateProperty.all(const Color.fromARGB(255, 0, 151, 178),),
+                        shape: MaterialStateProperty.all<OutlinedBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(0), // Remove rounded borders
+                          ),
+                        ),
+                      ),
+                      child: const Icon(
+                        Icons.local_restaurant,
+                        color: Colors.white,
+                      ),
+                    ),
+                    ),
+                    Expanded(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        // Handle User button tap
+                      },
+                      style: ButtonStyle(
+                        minimumSize: MaterialStateProperty.all(const Size.fromHeight(48)),
+                        backgroundColor: MaterialStateProperty.all(const Color.fromARGB(219, 17, 94, 108),),
+                        shape: MaterialStateProperty.all<OutlinedBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(0), // Remove rounded borders
+                          ),
+                        ),
+                      ),
+                      child: const Icon(
+                        Icons.person,
+                        color: Colors.white,
+                      ),
+                    ),
+                    ),
+                  ],
+                  ),
+                  ),
+                ],
               ),
           ],
         ),
@@ -140,7 +144,7 @@ class _ProfileState extends State<Profile> {
       return Container(
         margin: const EdgeInsets.fromLTRB(10, 10, 10, 0),
         decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 249, 242, 242),
+          color: const Color.fromARGB(255, 203, 247, 255),
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: ListTile(
