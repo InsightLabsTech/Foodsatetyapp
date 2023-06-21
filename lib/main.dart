@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_mao/home.dart';
+import 'package:google_mao/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      home: const HomePage(),
+      home: const LoginPage(),
     );
   }
 }
