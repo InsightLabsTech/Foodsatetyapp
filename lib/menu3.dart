@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MenuPage extends StatelessWidget {
-  const MenuPage({super.key});
+class MenuPage3 extends StatelessWidget {
+  const MenuPage3({super.key});
 
   @override
 Widget build(BuildContext context) {
@@ -43,15 +43,15 @@ Widget build(BuildContext context) {
             padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Column(
               children: [
-                _buildDishTile('Biriyani', '150'),
-                _buildDishTile('Porotta', '10'),
-                _buildDishTile('Chappati', '5'),
-                _buildDishTile('Butter Chicken', '180'),
-                _buildDishTile('Kothuporotta', '120'),
-                _buildDishTile('Gobi Manchurian', '100'),
+                _buildDishTile('Lamb 65', '150'),
+                _buildDishTile('Idiyappam', '10'),
+                _buildDishTile('Idli', '5'),
+                _buildDishTile('Mushroom Masala', '180'),
+                _buildDishTile('Beef Fry', '120'),
+                _buildDishTile('Fish Manchurian', '100'),
                 _buildDishTile('Shawarma', '90'),
-                _buildDishTile('Lime Juice', '30'),
-                _buildDishTile('Fried Rice', '110'),
+                _buildDishTile('Apple Juice', '30'),
+                _buildDishTile('Biriyani', '110'),
               ],
             ),
           ),
@@ -123,12 +123,12 @@ Widget build(BuildContext context) {
                     Row(
                       children: const [
                         Text(
-                          'PeterSon',
+                          'RoanMark',
                           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(width: 8),
                         Text(
-                          '4.8',
+                          '3.9',
                           style: TextStyle(fontSize: 16, color: Colors.amber),
                         ),
                         Icon(
@@ -140,7 +140,7 @@ Widget build(BuildContext context) {
                     ),
                     const SizedBox(height: 8),
                     const Text(
-                      '"During the food inspection, the restaurant maintained excellent hygiene and cleanliness. The kitchen area was spotless, with all food preparation surfaces properly sanitized."',
+                      '"The restaurant appeared generally clean, but there were a few areas that needed better attention. The floors could benefit from more frequent cleaning, and some surfaces had noticeable grease buildup."',
                       style: TextStyle(fontStyle: FontStyle.italic),
                     ),
                   ],
@@ -159,12 +159,12 @@ Widget build(BuildContext context) {
                     Row(
                       children: const [
                         Text(
-                          'MarsExplorer',
+                          'BasheerK',
                           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(width: 8),
                         Text(
-                          '4.7',
+                          '3.9',
                           style: TextStyle(fontSize: 16, color: Colors.amber),
                         ),
                         Icon(
@@ -176,7 +176,7 @@ Widget build(BuildContext context) {
                     ),
                     const SizedBox(height: 8),
                     const Text(
-                      '"The food storage areas were well-organized, with proper labeling and rotation of ingredients. Additionally, the staff demonstrated good food handling practices, wearing gloves and hairnets."',
+                      '"The staff followed basic food handling procedures, but there were a few instances where gloves were not consistently used when handling ready-to-eat items. It is important to reinforce proper hygiene practices and the importance of wearing gloves at all times."',
                       style: TextStyle(fontStyle: FontStyle.italic),
                     ),
                   ],
@@ -195,12 +195,12 @@ Widget build(BuildContext context) {
                     Row(
                       children: const [
                         Text(
-                          'AnnieHour',
+                          'FoodNisha',
                           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(width: 8),
                         Text(
-                          '4.5',
+                          '3.8',
                           style: TextStyle(fontSize: 16, color: Colors.amber),
                         ),
                         Icon(
@@ -212,7 +212,7 @@ Widget build(BuildContext context) {
                     ),
                     const SizedBox(height: 8),
                     const Text(
-                      '"The restaurant met all health and safety regulations. The establishment maintained high standards of cleanliness and exhibited excellent food handling practices."',
+                      '"The storage areas were organized, but there were a few cases where food items were not properly sealed or labeled. It is crucial to ensure that containers are tightly sealed to prevent contamination and that labels are accurate and easy to read."',
                       style: TextStyle(fontStyle: FontStyle.italic),
                     ),
                   ],

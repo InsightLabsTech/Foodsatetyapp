@@ -7,6 +7,10 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:google_mao/constants.dart';
 import 'package:google_mao/menu.dart';
+import 'package:google_mao/menu1.dart';
+import 'package:google_mao/menu2.dart';
+import 'package:google_mao/menu3.dart';
+import 'package:google_mao/menu4.dart';
 import 'package:google_mao/user.dart';
 
 void restmap() => runApp(const NearbyRestaurant());
@@ -237,10 +241,37 @@ class RestaurantTrackingPageState extends State<NearbyRestaurant> {
                                   ],
                                 ),
                                 onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(builder: (context) => const MenuPage()),
-                                  );
+                                  if (index == 0) {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const MenuPage()),
+                                    );
+                                  } else if (index == 1) {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const MenuPage1()),
+                                    );
+                                  } else if (index == 2) {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const MenuPage2()),
+                                    );
+                                  } else if (index == 3) {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const MenuPage3()),
+                                    );
+                                  } else if (index == 4) {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const MenuPage4()),
+                                    );
+                                  } else {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const MenuPage()),
+                                    );
+                                  }
                                 },
                               ),
                             );
@@ -312,9 +343,10 @@ class RestaurantTrackingPageState extends State<NearbyRestaurant> {
 
     final latitude = _currentPosition.latitude;
     final longitude = _currentPosition.longitude;
-    const radius = 1000; // Radius in meters
+    const radius = 3000; // Radius in meters
     const types = 'restaurant|cafe'; // bar|lodging'; // Specify the types here
     const rankBy = 'prominence'; 
+    const maxResults = 5;
 
     final url =
         'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=$latitude,$longitude&radius=$radius&types=$types&rankby=$rankBy&key=$apiKey';
@@ -325,7 +357,7 @@ class RestaurantTrackingPageState extends State<NearbyRestaurant> {
       final data = json.decode(response.body);
       final results = data['results'] as List<dynamic>;
 
-      final nearbyRestaurants = results.map((result) {
+      final nearbyRestaurants = results.take(maxResults).map((result) {
         final name = result['name'] as String;
         final geometry = result['geometry'];
         final location = geometry['location'];

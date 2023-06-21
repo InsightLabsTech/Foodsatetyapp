@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_mao/map.dart';
+import 'package:google_mao/userData.dart';
+
 void userProfile() => runApp(const Profile());
+String username = UserData.username;
 
 class Profile extends StatefulWidget {
   const Profile({Key? key}) : super(key: key);
@@ -39,20 +42,21 @@ class _ProfileState extends State<Profile> {
                             padding:  EdgeInsets.fromLTRB(30, 20, 20, 0),
                             child: CircleAvatar(
                               radius: 40,
+                              backgroundColor: Colors.white,
                               backgroundImage: NetworkImage(
-                                    "https://images.unsplash.com/photo-1678188575046-4cad367dd8df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+                                    "https://icons.veryicon.com/png/o/internet--web/55-common-web-icons/person-4.png"),
                             ),
                           ),
                         ],
                       ),
                       // const SizedBox(width: 20),
-                      const Padding(
-                        padding: EdgeInsets.only(top: 10),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10),
                         child: Text(
-                           'Nicole Watson',
-                           style: TextStyle(
+                           username,
+                           style: const TextStyle(
                              color: Color.fromARGB(255, 0, 151, 178),
-                             fontSize: 22,
+                             fontSize: 26,
                              fontWeight: FontWeight.bold
                            ),
                          ),

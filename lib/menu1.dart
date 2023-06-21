@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MenuPage extends StatelessWidget {
-  const MenuPage({super.key});
+class MenuPage1 extends StatelessWidget {
+  const MenuPage1({super.key});
 
   @override
 Widget build(BuildContext context) {
@@ -43,12 +43,12 @@ Widget build(BuildContext context) {
             padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Column(
               children: [
-                _buildDishTile('Biriyani', '150'),
-                _buildDishTile('Porotta', '10'),
-                _buildDishTile('Chappati', '5'),
-                _buildDishTile('Butter Chicken', '180'),
-                _buildDishTile('Kothuporotta', '120'),
-                _buildDishTile('Gobi Manchurian', '100'),
+                _buildDishTile('Chicken 65', '150'),
+                _buildDishTile('Dosa', '10'),
+                _buildDishTile('Idli', '5'),
+                _buildDishTile('Butter Paneer', '180'),
+                _buildDishTile('Shrimp', '120'),
+                _buildDishTile('Chicken Manchurian', '100'),
                 _buildDishTile('Shawarma', '90'),
                 _buildDishTile('Lime Juice', '30'),
                 _buildDishTile('Fried Rice', '110'),
@@ -123,79 +123,7 @@ Widget build(BuildContext context) {
                     Row(
                       children: const [
                         Text(
-                          'PeterSon',
-                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(width: 8),
-                        Text(
-                          '4.8',
-                          style: TextStyle(fontSize: 16, color: Colors.amber),
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: Colors.amber,
-                          size: 18,
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 8),
-                    const Text(
-                      '"During the food inspection, the restaurant maintained excellent hygiene and cleanliness. The kitchen area was spotless, with all food preparation surfaces properly sanitized."',
-                      style: TextStyle(fontStyle: FontStyle.italic),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                margin: const EdgeInsets.only(top: 8.0),
-                padding: const EdgeInsets.all(8.0),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
-                  color: Colors.white,
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: const [
-                        Text(
-                          'MarsExplorer',
-                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(width: 8),
-                        Text(
-                          '4.7',
-                          style: TextStyle(fontSize: 16, color: Colors.amber),
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: Colors.amber,
-                          size: 18,
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 8),
-                    const Text(
-                      '"The food storage areas were well-organized, with proper labeling and rotation of ingredients. Additionally, the staff demonstrated good food handling practices, wearing gloves and hairnets."',
-                      style: TextStyle(fontStyle: FontStyle.italic),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                margin: const EdgeInsets.only(top: 8.0),
-                padding: const EdgeInsets.all(8.0),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
-                  color: Colors.white,
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: const [
-                        Text(
-                          'AnnieHour',
+                          'BenRiley',
                           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(width: 8),
@@ -212,7 +140,79 @@ Widget build(BuildContext context) {
                     ),
                     const SizedBox(height: 8),
                     const Text(
-                      '"The restaurant met all health and safety regulations. The establishment maintained high standards of cleanliness and exhibited excellent food handling practices."',
+                      '"The food inspection of the food truck showed a commendable adherence to food safety standards. The operators maintained a clean and organized workspace, with regular handwashing and glove usage."',
+                      style: TextStyle(fontStyle: FontStyle.italic),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 8.0),
+                padding: const EdgeInsets.all(8.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8.0),
+                  color: Colors.white,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: const [
+                        Text(
+                          'Foodie',
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(width: 8),
+                        Text(
+                          '4.3',
+                          style: TextStyle(fontSize: 16, color: Colors.amber),
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.amber,
+                          size: 18,
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    const Text(
+                      '"The food truck also had proper waste disposal measures in place. The inspector commended the owners for their dedication to maintaining high food safety standards."',
+                      style: TextStyle(fontStyle: FontStyle.italic),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 8.0),
+                padding: const EdgeInsets.all(8.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8.0),
+                  color: Colors.white,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: const [
+                        Text(
+                          'Rahana24',
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(width: 8),
+                        Text(
+                          '4.0',
+                          style: TextStyle(fontSize: 16, color: Colors.amber),
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.amber,
+                          size: 18,
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    const Text(
+                      '"The food truck had a clean workspace, with regular handwashing. The refrigeration units were operating at the appropriate temperatures, ensuring the freshness of the ingredients."',
                       style: TextStyle(fontStyle: FontStyle.italic),
                     ),
                   ],
