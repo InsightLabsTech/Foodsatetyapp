@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const Center(
                 child: Text(
-                  'Login',
+                  'Register',
                   style: TextStyle(
                     fontSize: 35.0,
                     fontWeight: FontWeight.bold,
@@ -78,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                   backgroundColor: MaterialStateProperty.all(const Color.fromARGB(219, 17, 94, 108),)
                 ),
                 child: const Text(
-                    'Log In',
+                    'Register Your Account',
                   style: TextStyle(
                     fontSize: 18.0,
                     fontWeight: FontWeight.bold,

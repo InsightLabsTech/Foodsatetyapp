@@ -105,7 +105,7 @@ Widget build(BuildContext context) {
                   child: Align(
                     alignment: Alignment.topLeft,
                     child: Text(
-                    'Reviews',
+                    'Food Inspection Review:',
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold,
                     color: Colors.white),
                   ),)
@@ -123,7 +123,7 @@ Widget build(BuildContext context) {
                     Row(
                       children: const [
                         Text(
-                          'James007',
+                          'Dr. Prasad R P',
                           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(width: 8),
@@ -159,7 +159,7 @@ Widget build(BuildContext context) {
                     Row(
                       children: const [
                         Text(
-                          'ReviewBoy',
+                          'Dr. Jissy P',
                           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(width: 8),
@@ -195,7 +195,7 @@ Widget build(BuildContext context) {
                     Row(
                       children: const [
                         Text(
-                          'InspectorDude',
+                          'Dhananjay S K',
                           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(width: 8),
@@ -252,13 +252,22 @@ Widget build(BuildContext context) {
       child: ListTile(
         title: Padding(
           padding: const EdgeInsets.only(left: 10),
-          child: Text(
-            dishName,
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 18,
-              fontWeight: FontWeight.w400,
-            ),
+          child: Row(
+            children: [
+              const Icon(
+                Icons.check_box_outline_blank,
+                color: Colors.white,
+              ),
+              const SizedBox(width: 10),
+              Text(
+                dishName,
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ],
           ),
         ),
         trailing: Padding(
