@@ -23,7 +23,7 @@ class _ProfileState extends State<Profile> {
           appBar: AppBar(
             backgroundColor: const Color.fromARGB(255, 0, 151, 178),
             title: const Text(
-              "User",
+              "User (For further updation)",
               style: TextStyle(color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
             ),
             // centerTitle: true,
@@ -72,14 +72,14 @@ class _ProfileState extends State<Profile> {
                     child: ListView(
                       padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
                       children: [
-                        _buildDishTile('Age', '20'),
-                        _buildDishTile('Height(cm)', '170'),
-                        _buildDishTile('Weight(kg)', '85'),
-                        _buildDishTile('Target Height(cm)', '180'),
-                        _buildDishTile('Target Weight(kg)', '70'),
-                        _buildDishTile('Last Calorie Intake(kcal)', '100'),
-                        _buildDishTile('Avg Calorie Intake(kcal)', '90'),
-                        _buildDishTile('Target Calorie Intake(kcal)', '40'),
+                        _buildDishTile('Age', '_'),
+                        _buildDishTile('Height(cm)', '_'),
+                        _buildDishTile('Weight(kg)', '_'),
+                        // _buildDishTile('Target Height(cm)', '_'),
+                        _buildDishTile('Target Weight(kg)', '_'),
+                        // _buildDishTile('Last Calorie Intake(kcal)', '_'),
+                        _buildDishTile('Avg Calorie Intake(kcal)', '_'),
+                        _buildDishTile('Target Calorie Intake(kcal)', '_'),
                         // Add more data here...
                       ],
                     ),

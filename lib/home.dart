@@ -46,9 +46,7 @@ class HomePage extends StatelessWidget {
                       padding: EdgeInsets.fromLTRB(5, 5, 10, 10),
                       child: 
                       Text(
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-                        'Praesent vestibulum justo in convallis consequat. '
-                        'Vestibulum tristique semper lorem, id tincidunt tellus facilisis vitae.',
+                        'This application helps you find the healthiest hotels to eat. Also saves your time by preordering your food from your favourite restaurants instead of waiting too long.',
                         textAlign: TextAlign.justify,
                         style: TextStyle(
                           color: Colors.white,
